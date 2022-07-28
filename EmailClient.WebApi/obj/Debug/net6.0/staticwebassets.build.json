@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "nMvZSm62hALaHmBF+cmtoH6eGAPEsR1Gai2Ns+VFZe0=",
+  "Source": "EmailClient.WebApi",
+  "BasePath": "_content/EmailClient.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

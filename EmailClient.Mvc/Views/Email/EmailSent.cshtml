@@ -1,0 +1,15 @@
+﻿@using EmailClient.Mvc;
+@model EmailViewModel;
+@{
+    ViewData["Title"] = "Email Sent Successfully.";
+}
+
+<h2>The following email was sent successfully!</h2>
+
+<h4>To: @Model.Recipient</h4>
+<h5>Bcc: @Model.Bcc</h5>
+<h6>Subject: @Model.Subject</h6>
+<p>
+    <h6>Message</h6>
+    @Model.Body
+</p>

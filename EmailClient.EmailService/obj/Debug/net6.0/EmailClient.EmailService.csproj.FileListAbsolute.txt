@@ -1,0 +1,12 @@
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.EmailService\bin\Debug\net6.0\EmailClient.EmailService.deps.json
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.EmailService\bin\Debug\net6.0\EmailClient.EmailService.dll
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.EmailService\bin\Debug\net6.0\EmailClient.EmailService.pdb
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.EmailService\obj\Debug\net6.0\EmailClient.EmailService.csproj.AssemblyReference.cache
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.EmailService\obj\Debug\net6.0\EmailClient.EmailService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.EmailService\obj\Debug\net6.0\EmailClient.EmailService.AssemblyInfoInputs.cache
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.EmailService\obj\Debug\net6.0\EmailClient.EmailService.AssemblyInfo.cs
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.EmailService\obj\Debug\net6.0\EmailClient.EmailService.csproj.CoreCompileInputs.cache
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.EmailService\obj\Debug\net6.0\EmailClient.EmailService.dll
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.EmailService\obj\Debug\net6.0\refint\EmailClient.EmailService.dll
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.EmailService\obj\Debug\net6.0\EmailClient.EmailService.pdb
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.EmailService\obj\Debug\net6.0\ref\EmailClient.EmailService.dll

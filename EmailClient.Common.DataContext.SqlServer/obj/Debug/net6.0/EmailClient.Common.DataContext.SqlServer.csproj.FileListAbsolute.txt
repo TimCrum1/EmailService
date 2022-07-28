@@ -1,0 +1,15 @@
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.Common.DataContext.SqlServer\bin\Debug\net6.0\EmailClient.Common.DataContext.SqlServer.deps.json
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.Common.DataContext.SqlServer\bin\Debug\net6.0\EmailClient.Common.DataContext.SqlServer.dll
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.Common.DataContext.SqlServer\bin\Debug\net6.0\EmailClient.Common.DataContext.SqlServer.pdb
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.Common.DataContext.SqlServer\bin\Debug\net6.0\EmailClient.Common.EntityModels.SqlServer.dll
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.Common.DataContext.SqlServer\bin\Debug\net6.0\EmailClient.Common.EntityModels.SqlServer.pdb
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.Common.DataContext.SqlServer\obj\Debug\net6.0\EmailClient.Common.DataContext.SqlServer.csproj.AssemblyReference.cache
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.Common.DataContext.SqlServer\obj\Debug\net6.0\EmailClient.Common.DataContext.SqlServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.Common.DataContext.SqlServer\obj\Debug\net6.0\EmailClient.Common.DataContext.SqlServer.AssemblyInfoInputs.cache
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.Common.DataContext.SqlServer\obj\Debug\net6.0\EmailClient.Common.DataContext.SqlServer.AssemblyInfo.cs
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.Common.DataContext.SqlServer\obj\Debug\net6.0\EmailClient.Common.DataContext.SqlServer.csproj.CoreCompileInputs.cache
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.Common.DataContext.SqlServer\obj\Debug\net6.0\EmailClient.Common.DataContext.SqlServer.csproj.CopyComplete
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.Common.DataContext.SqlServer\obj\Debug\net6.0\EmailClient.Common.DataContext.SqlServer.dll
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.Common.DataContext.SqlServer\obj\Debug\net6.0\refint\EmailClient.Common.DataContext.SqlServer.dll
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.Common.DataContext.SqlServer\obj\Debug\net6.0\EmailClient.Common.DataContext.SqlServer.pdb
+C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.Common.DataContext.SqlServer\obj\Debug\net6.0\ref\EmailClient.Common.DataContext.SqlServer.dll
