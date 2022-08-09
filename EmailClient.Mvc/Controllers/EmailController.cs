@@ -1,10 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using EmailClient.WebApi;
 using EmailClient.EmailService;
 using EmailClient.Mvc.Models;
-using MimeKit;
-using Newtonsoft.Json;
-using System.Text;
+using System.Net.Http.Headers;
 
 namespace EmailClient.Mvc.Controllers;
 
@@ -40,25 +37,65 @@ public class EmailController : Controller
             return BadRequest("Model was invalid.");
         }
 
-        //List<string> toEmails = viewModel.Recipient.Split(",").ToList();
-        //List<string> bccEmails = viewModel.Bcc.Split(",").ToList();
+        List<string> toEmails = viewModel.Recipient.Split(",").ToList();
+        List<string> bccEmails = viewModel.Bcc.Split(",").ToList();
 
-        //Message message = new(toEmails, bccEmails, viewModel.Subject, viewModel.Body); //, viewModel.Attachments);
-        
-        string uri = "/send";
+        Message message = new(toEmails, bccEmails, viewModel.Subject, viewModel.Body, viewModel.Attachments);
 
-        HttpClient client = clientFactory.CreateClient(
-            name: "EmailClient.WebApi");
+        string uri = "https://localhost:5003/send";
+
+        HttpClient client = clientFactory.CreateClient();
+
+        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("multipart/form-data"));
 
         HttpRequestMessage request = new(HttpMethod.Post, uri);
 
-        request.Content = new FormUrlEncodedContent(new Dictionary<string, string>
+        long allFilesLength = viewModel.Attachments.Sum(f => f.Length);
+        byte[] filesContent = new byte[allFilesLength];
+
+        foreach (var file in viewModel.Attachments)
         {
-            { "recipients", viewModel.Recipient },
-            { "bccs", viewModel.Bcc },
-            { "subject", viewModel.Subject },
-            { "content", viewModel.Body }
-        });
+            if (file.Length > 0)
+            {
+                using (MemoryStream stream = new())
+                {
+                    await file.CopyToAsync(stream);
+                    using (StreamContent streamContent = new(stream))
+                    {
+                        var attachmentsContent = await streamContent.ReadAsByteArrayAsync();
+                        foreach (var bit in attachmentsContent)
+                        {
+                            filesContent.Append(bit);
+                        }
+                    }
+                }
+            }
+        }
+
+        ByteArrayContent byteArrayContent = new(filesContent);
+
+        //request.Content = new FormUrlEncodedContent(new Dictionary<string, string>
+        //{
+        //    {"recipients", viewModel.Recipient },
+        //    { "bccs", viewModel.Bcc },
+        //    { "subject", viewModel.Subject },
+        //    { "content", viewModel.Body },
+        //    { "attachments", viewModel.Attachments }
+        //});
+
+        request.Headers.Add("recipients", viewModel.Recipient);
+        request.Headers.Add("bccs", viewModel.Bcc);
+        request.Headers.Add("subject", viewModel.Subject);
+        request.Headers.Add("content", viewModel.Body);
+
+        request.Content = new MultipartFormDataContent
+        {
+            //{ new StringContent(viewModel.Recipient), "recipients" },
+            //{ new StringContent(viewModel.Bcc), "bccs" },
+            //{ new StringContent(viewModel.Subject), "subject" },
+            //{ new StringContent(viewModel.Body), "content" },
+            byteArrayContent
+        };
 
         HttpResponseMessage response = await client.SendAsync(request);
 

@@ -6,8 +6,8 @@ using Swashbuckle.AspNetCore.SwaggerUI;
 
 var builder = WebApplication.CreateBuilder(args);
 
-////Extension method in order to use port 5002 for https (localhost) while MVC app running on 5001
-//builder.WebHost.UseUrls("https://localhost:5003/");
+////Extension method in order to use port 5003 for https (localhost) while MVC app running on 5001
+builder.WebHost.UseUrls("https://localhost:5003/");
 
 builder.Services.AddEmailClientContext();
 

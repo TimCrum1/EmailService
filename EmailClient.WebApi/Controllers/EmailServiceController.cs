@@ -27,12 +27,17 @@ public class EmailServiceController : Controller
     [Route("/send")]
     [ProducesResponseType(200, Type = typeof(Message))]
     [ProducesResponseType(400)]
-    public async Task<IActionResult> SendEmail(string recipients, string bccs, string subject, string content)
+    public async Task<IActionResult> SendEmail(string recipients, string bccs, string subject, string content, IFormFileCollection attachments)
     {
         List<string> recipientsList = recipients.Split(",").ToList();
         List<string> bccList = bccs.Split(",").ToList();
 
-        Message message = new Message(recipientsList, bccList, subject, content);
+        //if (attachments == null || !attachments.Any())
+        //{
+        //    attachments = new FormFileCollection();
+        //}
+
+        Message message = new Message(recipientsList, bccList, subject, content, attachments);
 
         bool success = await emailSender.SendEmailAsync(message);
 
@@ -65,8 +70,11 @@ public class EmailServiceController : Controller
     public async Task<bool> SendTestEmail(string recipient)
     {
         List<string> recipients = new();
+        List<string> bccs = new();
+        FormFileCollection attachments = new();
+
         recipients.Add(recipient);
-        var message = new Message(recipients, null, "Test Email", "This is a test email sent to you by the EmailService service."); //, null);
+        var message = new Message(recipients, bccs, "Test Email", "This is a test email sent to you by the EmailService service.", attachments);
         bool success = await emailSender.SendEmailAsync(message);
         Email email = new Email()
         {

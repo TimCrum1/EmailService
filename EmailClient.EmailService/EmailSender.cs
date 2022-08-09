@@ -35,19 +35,20 @@ public class EmailSender : IEmailSender
             TextBody = message.Content
         };
 
-        //if (message.Attachments != null && message.Attachments.Any())
-        //{
-        //    byte[] filesContent;
-        //    foreach (var attachment in message.Attachments)
-        //    {
-        //        using (var stream = new MemoryStream())
-        //        {
-        //            attachment.CopyTo(stream);
-        //            filesContent = stream.ToArray();
-        //        }
-        //        bodyBuilder.Attachments.Add(attachment.FileName, filesContent, ContentType.Parse(attachment.ContentType));
-        //    }
-        //}
+        if (message.Attachments != null && message.Attachments.Any())
+        {
+            byte[] filesContent;
+            foreach (var attachment in message.Attachments)
+            {
+                using (var stream = new MemoryStream())
+                {
+                    attachment.CopyTo(stream);
+                    filesContent = stream.ToArray();
+                    stream.Close();
+                }
+                bodyBuilder.Attachments.Add(attachment.FileName, filesContent, ContentType.Parse(attachment.ContentType));
+            }
+        }
         emailMessage.Body = bodyBuilder.ToMessageBody();
 
         return emailMessage;

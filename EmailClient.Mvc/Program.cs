@@ -15,14 +15,7 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
-builder.Services.AddHttpClient(name: "EmailClient.WebApi",
-    configureClient: options =>
-    {
-        options.BaseAddress = new Uri("https://localhost:5003/");
-        options.DefaultRequestHeaders.Accept.Add(
-            new MediaTypeWithQualityHeaderValue(
-                "application/json", 1.0));
-    });
+builder.Services.AddHttpClient(name: "EmailClient.WebApi");
 
 builder.Services.AddControllersWithViews();
 
