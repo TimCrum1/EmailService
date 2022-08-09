@@ -5,9 +5,14 @@ using System.Net.Http.Headers;
 
 namespace EmailClient.Mvc.Controllers;
 
+/// <summary>
+/// Email controller for sending emails synchronously and asynchronously
+/// </summary>
 public class EmailController : Controller
 {
+    //logger to log errors to console (or potentially event log db)
     private readonly ILogger<EmailController> _logger;
+    //HttpClientFactory to be injected from DI container
     private  IHttpClientFactory clientFactory;
 
     public EmailController(ILogger<EmailController> logger, IHttpClientFactory clientFactory)
@@ -16,12 +21,20 @@ public class EmailController : Controller
         this.clientFactory = clientFactory;
     }
 
+    /// <summary>
+    /// Method to display the Homepage of the MVC application's send email feature.
+    /// </summary>
+    /// <returns>A view of the Homepage</returns>
     [HttpGet]
     public IActionResult Index()
     {
         return View();
     }
 
+    /// <summary>
+    /// Method to display the SendEmail page of the MVC application.
+    /// </summary>
+    /// <returns>A view of the SendEmail page.</returns>
     [HttpGet]
     public IActionResult SendEmail()
     {
@@ -29,14 +42,21 @@ public class EmailController : Controller
         return View(viewModel);
     }
 
+    /// <summary>
+    /// Method to send the email synchronously
+    /// </summary>
+    /// <param name="viewModel">The EmailViewModel</param>
+    /// <returns>A view of the SentSuccessfully page, if email was sent successfully.</returns>
     [HttpPost]
     public async Task<IActionResult> SendEmail(EmailViewModel viewModel)
     {
+        //determine model validity
         if (!ModelState.IsValid)
         {
             return BadRequest("Model was invalid.");
         }
 
+        //convert each email from recipients and bcc string to a List<string>, which isn't currently being used.
         List<string> toEmails = viewModel.Recipient.Split(",").ToList();
         List<string> bccEmails = viewModel.Bcc.Split(",").ToList();
 

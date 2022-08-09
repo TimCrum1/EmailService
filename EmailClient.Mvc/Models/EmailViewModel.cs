@@ -1,5 +1,8 @@
 ﻿namespace EmailClient.Mvc.Models;
 
+/// <summary>
+/// ViewModel for the Email that is being sent.
+/// </summary>
 public class EmailViewModel
 {
     public string Recipient { get; set; } = string.Empty;

@@ -3,6 +3,9 @@ using Microsoft.AspNetCore.Http;
 
 namespace EmailClient.EmailService;
 
+/// <summary>
+/// Message object for sending emails across Smtp
+/// </summary>
 public class Message
 {
     public List<MailboxAddress> To { get; set; }

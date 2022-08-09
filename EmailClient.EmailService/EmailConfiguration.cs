@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace EmailClient.EmailService;
 
-namespace EmailClient.EmailService;
-
+/// <summary>
+/// Email configuration object
+/// </summary>
 public class EmailConfiguration
 {
     public string Name { get; set; } = string.Empty;

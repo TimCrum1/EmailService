@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace EmailClient.EmailService;
 
-namespace EmailClient.EmailService;
-
+/// <summary>
+/// Interface for an EmailSender service
+/// </summary>
 public interface IEmailSender
 {
     bool SendEmail(Message message);

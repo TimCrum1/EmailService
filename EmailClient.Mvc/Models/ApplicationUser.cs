@@ -3,6 +3,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace EmailClient.Mvc.Models;
 
+/// <summary>
+/// User model for Microsoft Identity authorization and authentication
+/// </summary>
 public class ApplicationUser : IdentityUser
 {
     public string FirstName { get; set; } = string.Empty;
