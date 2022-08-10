@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lUATPBhyq+IAap0KhoqP+mvbKJZyMGvEybtGAKRSct5L7DIK2F0rLVL5bUUVP/8lvSAFm0j12pyjqWDjfZFQrw==",
+  "dgSpecHash": "krM91BqLzfuqd+EDaJfUBWpDL6jh+OAZLg94M59BtOGs5CecqPDrm6ImVXdzY3anCqCwkhOTeGDkzrxm0mcGng==",
   "success": true,
   "projectFilePath": "C:\\Users\\timcr\\Documents\\ClarityVenturesExercise\\EmailClient\\EmailClient.Common.EntityModels.SqlServer\\EmailClient.Common.EntityModels.SqlServer.csproj",
   "expectedPackageFiles": [

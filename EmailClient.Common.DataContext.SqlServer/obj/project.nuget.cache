@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "h86Lt4iBWHqPMFxJYTPNWqd+040QBlXGBx7bbrYeiz3VVR9pgVd3U1w/daT57nmRxsDaiHmVSP/wAu/e0CEyCw==",
+  "dgSpecHash": "Kak16JLpJTZeB9JQUf7tM9D5YGDDn+bR2qrCgYuyQLRsLExhb9IlxOD15uy49hmbWYGMQLAZjzXQdH3TkmoK7Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\timcr\\Documents\\ClarityVenturesExercise\\EmailClient\\EmailClient.Common.DataContext.SqlServer\\EmailClient.Common.DataContext.SqlServer.csproj",
   "expectedPackageFiles": [

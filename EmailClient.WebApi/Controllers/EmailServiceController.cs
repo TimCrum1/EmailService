@@ -10,7 +10,7 @@ namespace EmailClient.WebApi.Controllers;
 /// </summary>
 [ApiController]
 [Route("api/[controller]")]
-public class EmailServiceController : Controller
+public class EmailServiceController : ControllerBase
 {
     //email config object holding SmtpHost and PortNumber as well as the sending email's username and password (injected from DI container)
     private EmailConfiguration emailConfiguration;
