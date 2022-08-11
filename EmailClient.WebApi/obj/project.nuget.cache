@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7fXlykNmVOhoI7MBVHMIvXwen+7g9ZRZYvRe79HXei7QsVgbuG9jtNGZglmi0xCV4gXJzjv9Wug1h6x5y1OF1g==",
+  "dgSpecHash": "zbNV6ORLSwvmH37AzPVA16H4YZT8DlC9icZmlPHPQrGiuURo17rpqjRnKdsCfWTxkkKfO+TjvOxBE0jJur1u6A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\timcr\\Documents\\ClarityVenturesExercise\\EmailClient\\EmailClient.WebApi\\EmailClient.WebApi.csproj",
+  "projectFilePath": "C:\\Users\\timcr\\Documents\\Clarity Ventures Solution\\Email Client\\EmailClient.WebApi\\EmailClient.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\timcr\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\timcr\\.nuget\\packages\\mailkit\\3.2.0\\mailkit.3.2.0.nupkg.sha512",

@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\timcr\\Documents\\ClarityVenturesExercise\\EmailClient\\EmailClient.EmailService\\EmailClient.EmailService.csproj": {}
+    "C:\\Users\\timcr\\Documents\\Clarity Ventures Solution\\Email Client\\EmailClient.EmailService\\EmailClient.EmailService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\timcr\\Documents\\ClarityVenturesExercise\\EmailClient\\EmailClient.EmailService\\EmailClient.EmailService.csproj": {
+    "C:\\Users\\timcr\\Documents\\Clarity Ventures Solution\\Email Client\\EmailClient.EmailService\\EmailClient.EmailService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\timcr\\Documents\\ClarityVenturesExercise\\EmailClient\\EmailClient.EmailService\\EmailClient.EmailService.csproj",
+        "projectUniqueName": "C:\\Users\\timcr\\Documents\\Clarity Ventures Solution\\Email Client\\EmailClient.EmailService\\EmailClient.EmailService.csproj",
         "projectName": "EmailClient.EmailService",
-        "projectPath": "C:\\Users\\timcr\\Documents\\ClarityVenturesExercise\\EmailClient\\EmailClient.EmailService\\EmailClient.EmailService.csproj",
+        "projectPath": "C:\\Users\\timcr\\Documents\\Clarity Ventures Solution\\Email Client\\EmailClient.EmailService\\EmailClient.EmailService.csproj",
         "packagesPath": "C:\\Users\\timcr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\timcr\\Documents\\ClarityVenturesExercise\\EmailClient\\EmailClient.EmailService\\obj\\",
+        "outputPath": "C:\\Users\\timcr\\Documents\\Clarity Ventures Solution\\Email Client\\EmailClient.EmailService\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\timcr\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -64,7 +59,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -73,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

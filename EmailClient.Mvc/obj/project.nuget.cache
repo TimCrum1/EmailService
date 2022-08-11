@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eQqqbv7SN3icULY8ux04O8TSmi1voirE7NZgRLP5mK87wQ0nXE5hjekBesc1dAOMlf6h0+6hiqT7ZusSB0SUxA==",
+  "dgSpecHash": "FuTxq4h+HDm1Db0RzTGax5RZ0wmWYXWoIJXUXHj7zmQxacs/2qxcuof8OCgxTguvl6xYIx/JSOWx9Jpu2KW0pg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\timcr\\Documents\\ClarityVenturesExercise\\EmailClient\\EmailClient.Mvc\\EmailClient.Mvc.csproj",
+  "projectFilePath": "C:\\Users\\timcr\\Documents\\Clarity Ventures Solution\\Email Client\\EmailClient.Mvc\\EmailClient.Mvc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\timcr\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\timcr\\.nuget\\packages\\mailkit\\3.2.0\\mailkit.3.2.0.nupkg.sha512",

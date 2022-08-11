@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Kak16JLpJTZeB9JQUf7tM9D5YGDDn+bR2qrCgYuyQLRsLExhb9IlxOD15uy49hmbWYGMQLAZjzXQdH3TkmoK7Q==",
+  "dgSpecHash": "7fUCuITCP6JRsyTqP+/A8sgA249F4WaS/JJuMXb1bHvjrN6VkolQgQ8JEaAno/Wsbnbc15Q98gQgGtb6hi3NMg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\timcr\\Documents\\ClarityVenturesExercise\\EmailClient\\EmailClient.Common.DataContext.SqlServer\\EmailClient.Common.DataContext.SqlServer.csproj",
+  "projectFilePath": "C:\\Users\\timcr\\Documents\\Clarity Ventures Solution\\Email Client\\EmailClient.Common.DataContext.SqlServer\\EmailClient.Common.DataContext.SqlServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\timcr\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\timcr\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

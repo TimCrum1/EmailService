@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "krM91BqLzfuqd+EDaJfUBWpDL6jh+OAZLg94M59BtOGs5CecqPDrm6ImVXdzY3anCqCwkhOTeGDkzrxm0mcGng==",
+  "dgSpecHash": "xn9mX7ecJNV3/PhH05bEeRVK2cUXupRFqTM7PkSeA5U9/1vk8ETtW1ZAwKfanUTYM0Ru8NTiJreB/1Bo37oo3Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\timcr\\Documents\\ClarityVenturesExercise\\EmailClient\\EmailClient.Common.EntityModels.SqlServer\\EmailClient.Common.EntityModels.SqlServer.csproj",
+  "projectFilePath": "C:\\Users\\timcr\\Documents\\Clarity Ventures Solution\\Email Client\\EmailClient.Common.EntityModels.SqlServer\\EmailClient.Common.EntityModels.SqlServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\timcr\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\timcr\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

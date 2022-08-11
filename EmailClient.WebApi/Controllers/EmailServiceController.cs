@@ -2,6 +2,8 @@
 using EmailClient.EmailService;
 using EmailClient.WebApi.DAL;
 using Microsoft.AspNetCore.Mvc;
+using Org.BouncyCastle.Cms;
+using System.Net.Mail;
 
 namespace EmailClient.WebApi.Controllers;
 
@@ -35,13 +37,66 @@ public class EmailServiceController : ControllerBase
     /// <param name="subject">The subject line of the email</param>
     /// <param name="content">The message body or content of the email</param>
     /// <param name="attachments">Any file attachments to be sent with the email</param>
-    /// <returns></returns>
+    /// <returns>The email wrapped in a HTTP Status code</returns>
     // POST: api/emailservice 
     [HttpPost]
     [Route("/send")]
-    [ProducesResponseType(200, Type = typeof(Message))]
+    [ProducesResponseType(200, Type = typeof(Email))]
     [ProducesResponseType(400)]
-    public async Task<IActionResult> SendEmail(string recipients, string bccs, string subject, string content, IFormFileCollection attachments)
+    public IActionResult SendEmail(string recipients, string bccs, string subject, string content, IFormFileCollection attachments)
+    {
+        //create List<string> for recipients and bccs
+        List<string> recipientsList = recipients.Split(",").ToList();
+        List<string> bccList = bccs.Split(",").ToList();
+
+        //Create EmailService Message object from parameters
+        Message message = new Message(recipientsList, bccList, subject, content, attachments);
+
+        //Send the email and record success
+        bool success = emailSender.SendEmail(message);
+
+        //create local DB model for email to be stored in DB (all except for attachments)
+        Email email = new()
+        {
+            Sender = emailConfiguration.MailFrom,
+            Subject = subject,
+            Message = content,
+            Recipients = recipients,
+            Bccs = bccs,
+            SendDate = DateTime.Now,
+        };
+
+        //if successful save email and return 200 status code
+        if (success)
+        {
+            email.SentSuccessfully = true;
+            emailRepo.Add(email);
+            return Ok();
+        }
+        //else save email and return 400 bad request status code
+        else
+        {
+            email.SentSuccessfully = false;
+            emailRepo.Add(email);
+            return BadRequest();
+        }
+    }
+
+    /// <summary>
+    /// Send an email asynchronously
+    /// </summary>
+    /// <param name="recipients">The email address of the recipients, separated by a comma</param>
+    /// <param name="bccs">The email address of anyone who is bcc'd, separated by a comma</param>
+    /// <param name="subject">The subject line of the email</param>
+    /// <param name="content">The message body or content of the email</param>
+    /// <param name="attachments">Any file attachments to be sent with the email</param>
+    /// <returns>The Email wrapped in an HTTP Status code</returns>
+    // POST: api/emailservice 
+    [HttpPost]
+    [Route("/sendasync")]
+    [ProducesResponseType(200, Type = typeof(Email))]
+    [ProducesResponseType(400)]
+    public async Task<IActionResult> SendEmailAsync(string recipients, string bccs, string subject, string content, IFormFileCollection attachments)
     {
         //create List<string> for recipients and bccs
         List<string> recipientsList = recipients.Split(",").ToList();

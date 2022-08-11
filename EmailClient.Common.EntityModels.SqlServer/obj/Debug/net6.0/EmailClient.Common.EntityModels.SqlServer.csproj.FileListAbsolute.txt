@@ -12,3 +12,17 @@ C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.Common.
 C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.Common.EntityModels.SqlServer\obj\Debug\net6.0\EmailClient.Common.EntityModels.SqlServer.pdb
 C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.Common.EntityModels.SqlServer\obj\Debug\net6.0\EmailClient.Common.EntityModels.SqlServer.genruntimeconfig.cache
 C:\Users\timcr\Documents\ClarityVenturesExercise\EmailClient\EmailClient.Common.EntityModels.SqlServer\obj\Debug\net6.0\ref\EmailClient.Common.EntityModels.SqlServer.dll
+C:\Users\timcr\Documents\Clarity Ventures Solution\Email Client\EmailClient.Common.EntityModels.SqlServer\bin\Debug\net6.0\EmailClient.Common.EntityModels.SqlServer.deps.json
+C:\Users\timcr\Documents\Clarity Ventures Solution\Email Client\EmailClient.Common.EntityModels.SqlServer\bin\Debug\net6.0\EmailClient.Common.EntityModels.SqlServer.runtimeconfig.json
+C:\Users\timcr\Documents\Clarity Ventures Solution\Email Client\EmailClient.Common.EntityModels.SqlServer\bin\Debug\net6.0\EmailClient.Common.EntityModels.SqlServer.dll
+C:\Users\timcr\Documents\Clarity Ventures Solution\Email Client\EmailClient.Common.EntityModels.SqlServer\bin\Debug\net6.0\EmailClient.Common.EntityModels.SqlServer.pdb
+C:\Users\timcr\Documents\Clarity Ventures Solution\Email Client\EmailClient.Common.EntityModels.SqlServer\obj\Debug\net6.0\EmailClient.Common.EntityModels.SqlServer.csproj.AssemblyReference.cache
+C:\Users\timcr\Documents\Clarity Ventures Solution\Email Client\EmailClient.Common.EntityModels.SqlServer\obj\Debug\net6.0\EmailClient.Common.EntityModels.SqlServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\timcr\Documents\Clarity Ventures Solution\Email Client\EmailClient.Common.EntityModels.SqlServer\obj\Debug\net6.0\EmailClient.Common.EntityModels.SqlServer.AssemblyInfoInputs.cache
+C:\Users\timcr\Documents\Clarity Ventures Solution\Email Client\EmailClient.Common.EntityModels.SqlServer\obj\Debug\net6.0\EmailClient.Common.EntityModels.SqlServer.AssemblyInfo.cs
+C:\Users\timcr\Documents\Clarity Ventures Solution\Email Client\EmailClient.Common.EntityModels.SqlServer\obj\Debug\net6.0\EmailClient.Common.EntityModels.SqlServer.csproj.CoreCompileInputs.cache
+C:\Users\timcr\Documents\Clarity Ventures Solution\Email Client\EmailClient.Common.EntityModels.SqlServer\obj\Debug\net6.0\EmailClient.Common.EntityModels.SqlServer.dll
+C:\Users\timcr\Documents\Clarity Ventures Solution\Email Client\EmailClient.Common.EntityModels.SqlServer\obj\Debug\net6.0\refint\EmailClient.Common.EntityModels.SqlServer.dll
+C:\Users\timcr\Documents\Clarity Ventures Solution\Email Client\EmailClient.Common.EntityModels.SqlServer\obj\Debug\net6.0\EmailClient.Common.EntityModels.SqlServer.pdb
+C:\Users\timcr\Documents\Clarity Ventures Solution\Email Client\EmailClient.Common.EntityModels.SqlServer\obj\Debug\net6.0\EmailClient.Common.EntityModels.SqlServer.genruntimeconfig.cache
+C:\Users\timcr\Documents\Clarity Ventures Solution\Email Client\EmailClient.Common.EntityModels.SqlServer\obj\Debug\net6.0\ref\EmailClient.Common.EntityModels.SqlServer.dll

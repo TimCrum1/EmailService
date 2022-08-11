@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "U1Tc7v/TSn9vt7Hq6wlolMPjsAzusvucquQFlqiNVA9ah2H/M4nsmFX69BqLLn+hQ20SwHwyQIuXIU6QBqJBgQ==",
+  "dgSpecHash": "M6ClNkiWLVzL4P7CyO0lPxWgGe4ExCTcD5dyF407BjcTRKWG8wQa8nEmjMpWV28keEGJPYGHqacErIssPf3Lrg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\timcr\\Documents\\ClarityVenturesExercise\\EmailClient\\EmailClient.EmailService\\EmailClient.EmailService.csproj",
+  "projectFilePath": "C:\\Users\\timcr\\Documents\\Clarity Ventures Solution\\Email Client\\EmailClient.EmailService\\EmailClient.EmailService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\timcr\\.nuget\\packages\\mailkit\\3.2.0\\mailkit.3.2.0.nupkg.sha512",
     "C:\\Users\\timcr\\.nuget\\packages\\microsoft.aspnetcore.http\\2.2.2\\microsoft.aspnetcore.http.2.2.2.nupkg.sha512",
