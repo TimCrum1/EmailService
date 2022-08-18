@@ -8,14 +8,12 @@ namespace EmailClient.WebApi.Test;
 public class EmailRepoTest
 {
     private EmailRepo emailRepo;
-    private string Username;
 
     [SetUp]
     public void SetUp()
     {
         DbContextOptionsBuilder<EmailClientContext> options = new();
         emailRepo = new();
-        Username = "ectester90@gmail.com";
     }
 
     [Test]
@@ -26,7 +24,7 @@ public class EmailRepoTest
         {
             Recipients = "timcrum06,tcrum1@wvup.edu",
             Bccs = "timcrum88@gmail.com,tcrum06@gmail.com",
-            Sender = Username,
+            Sender = "ectester90@gmail.com",
             Subject = "This is test email",
             Message = "Here is the content of my repo test email.",
             SendDate = DateTime.Now,
@@ -81,7 +79,7 @@ public class EmailRepoTest
         {
             Recipients = "timcrum06,tcrum1@wvup.edu",
             Bccs = "timcrum88@gmail.com,tcrum06@gmail.com",
-            Sender = Username,
+            Sender = "ectester90@gmail.com",
             Subject = "This is test email",
             Message = "Here is the content of my repo test email.",
             SendDate = DateTime.Now,
@@ -106,7 +104,7 @@ public class EmailRepoTest
         {
             Recipients = "timcrum06,tcrum1@wvup.edu",
             Bccs = "timcrum88@gmail.com,tcrum06@gmail.com",
-            Sender = Username,
+            Sender = "ectester90@gmail.com",
             Subject = "This is test email",
             Message = "Here is the content of my repo test email.",
             SendDate = DateTime.Now,
@@ -117,7 +115,7 @@ public class EmailRepoTest
         {
             Recipients = "test@email.com,test2@email.com",
             Bccs = "testCC@email.com",
-            Sender = Username,
+            Sender = "ectester90@gmail.com",
             Subject = "Another test email",
             Message = "Content of another test email",
             SendDate = DateTime.Now,
@@ -128,7 +126,7 @@ public class EmailRepoTest
         {
             Recipients = "test@email.com,test2@email.com",
             Bccs = "testCC@email.com",
-            Sender = Username,
+            Sender = "ectester90@gmail.com",
             Subject = "Another test email",
             Message = "Content of another test email",
             SendDate = DateTime.Now,
