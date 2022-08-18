@@ -12,7 +12,6 @@ public class EmailRepoTest
     [SetUp]
     public void SetUp()
     {
-        DbContextOptionsBuilder<EmailClientContext> options = new();
         emailRepo = new();
     }
 
