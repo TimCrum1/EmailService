@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailClient.Mvc", "EmailClient.Mvc\EmailClient.Mvc.csproj", "{98A4E4FE-7C80-4606-B1A9-9212B6161D21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailClient.Mvc", "EmailClient.Mvc\EmailClient.Mvc.csproj", "{98A4E4FE-7C80-4606-B1A9-9212B6161D21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailClient.EmailService", "EmailClient.EmailService\EmailClient.EmailService.csproj", "{9D5FDA10-7365-4CF4-A1AA-38FC432F42BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailClient.EmailService", "EmailClient.EmailService\EmailClient.EmailService.csproj", "{9D5FDA10-7365-4CF4-A1AA-38FC432F42BE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailClient.Common.EntityModels.SqlServer", "EmailClient.Common.EntityModels.SqlServer\EmailClient.Common.EntityModels.SqlServer.csproj", "{7FF5D241-0F2D-4A02-ACB7-AF73F09393D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailClient.Common.DataContext.SqlServer", "EmailClient.Common.DataContext.SqlServer\EmailClient.Common.DataContext.SqlServer.csproj", "{E7254C95-A063-4DA6-A734-ED6C44A4E2A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailClient.Common.DataContext.SqlServer", "EmailClient.Common.DataContext.SqlServer\EmailClient.Common.DataContext.SqlServer.csproj", "{E7254C95-A063-4DA6-A734-ED6C44A4E2A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailClient.WebApi", "EmailClient.WebApi\EmailClient.WebApi.csproj", "{3ABFBD0A-EF69-4964-B35F-CE53A22C7F01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailClient.WebApi", "EmailClient.WebApi\EmailClient.WebApi.csproj", "{3ABFBD0A-EF69-4964-B35F-CE53A22C7F01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailClient.WebApi.Test", "EmailClient.WebApi.Test\EmailClient.WebApi.Test.csproj", "{5770446C-20FD-41D9-9547-17DDA4A001C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{3ABFBD0A-EF69-4964-B35F-CE53A22C7F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3ABFBD0A-EF69-4964-B35F-CE53A22C7F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3ABFBD0A-EF69-4964-B35F-CE53A22C7F01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5770446C-20FD-41D9-9547-17DDA4A001C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5770446C-20FD-41D9-9547-17DDA4A001C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5770446C-20FD-41D9-9547-17DDA4A001C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5770446C-20FD-41D9-9547-17DDA4A001C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
